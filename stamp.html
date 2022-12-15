@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+Dear mommy
+<br>
+I love you this many puppies...
+<br>
+
+	<style type="text/css">
+		.puppies{
+			width:100px;
+			height:100px;
+			background-size:contain;
+			background-position:center;
+			background-repeat:no-repeat;
+			background-image:url(lily.png);
+			border:1px solid black;
+			display: inline-block;
+
+		}
+
+		.puppies:hover{
+			background-image:url(puppylily.png);
+
+
+
+		}
+
+		document.addEventListener(
+			"click", function(event){
+				box.style.top= 50
+				box.style.left= 50
+
+				console.log(event.clientX, event.clientY)
+
+
+
+			})
+		
+
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+	
+
+
+	<script type="text/javascript">
+
+		let counter = 0;
+
+		
+		function makePuppy (){
+			counter = counter + 1
+
+			let puppy = document.createElement("div");
+
+			puppy.classList.add("puppies");
+
+			document.body.appendChild(puppy);
+
+			puppy.innerText = counter;
+		
+
+				}
+
+
+		setInterval(makePuppy, 100)
+
+
+
+		
+
+
+	</script>
+
+</body>
+</html>

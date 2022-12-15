@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+
+	<style type="text/css">
+		#dog{
+			height:150px;
+			width:150px;
+			background-image:url(fluffypuppy.png);
+			background-size:contain;
+			background-repeat:no-repeat;
+			position: absolute;
+			
+	
+
+}	
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<div id="dog"></div>
+
+
+
+<script type="text/javascript">
+	
+document.addEventListener("click", function makeDiv(event){
+
+console.log(event.clientX, event.clientY)
+
+
+dog.style.left = event.clientX - 75 + "px";
+dog.style.top = event.clientY -75 + "px";
+
+
+
+})
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

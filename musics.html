@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+</head>
+<body>
+
+
+	<audio scr="Recess.mp3" id="song"></audio>
+
+	<!-- strategy
+	X1. make an event listener on the document
+	X2. make a variable that counts clicks
+	3. if the click is odd, then do one thing
+	4. if the click is even, then do another thing -->
+
+	<script type="text/javascript">
+
+		let counter = 0;
+		
+			document.addEventListener("click", function(){
+				counter = counter + 1
+				
+				console.log(counter)
+
+				if(counter%2 == 0){
+					document.body.style.Image = "lightpink";
+				song.play() }
+
+				
+				if(counter%2 == 1){
+					document.body.style.Image = "lightgreen"
+				song.pause() }
+
+
+				
+		})
+
+
+
+
+	</script>
+
+</body>
+</html>
