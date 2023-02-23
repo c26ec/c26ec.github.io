@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>DONUTS!</title>
+
+	<style type="text/css">
+		.donuts{
+			width:100px;
+			height: 100px;
+			margin:5px;
+			display:inline-block;
+			background-image:url(https://www.krispykreme.com/App_Themes/krispykremenew/Content/images/loyalty/reward-doughnut.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+	//goal: make 1000 or more divs. to do this we are going to create a function/ recipe which creates divs - makes a div, puts in the body, adds class which allows us to style it. We'll run this function 1000 times in a for loop//
+
+	function makeDonuts (placeholder){
+		var box = document.createElement("div")
+		document.body.appendChild(box)
+		box.classList.add("donuts")
+		box.innerText = placeholder
+
+		box.addEventListener("click", function(){
+			box.style.backgroundImage="url(https://www.abakingjourney.com/wp-content/uploads/2021/11/Sesame-Bagels-Feature.jpg)"
+
+
+		})
+	}
+for(var i = 1; i<1001; i =i+1)
+	{makeDonuts(i)}
+
+	
+
+</script>
+</body>
+</html>
