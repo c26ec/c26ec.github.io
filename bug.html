@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+
+	<style type="text/css">
+		.bug{
+			width:100px;
+			height:100px;
+			background-image: url(fluffypuppy.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			transition: 1s;
+			background-color: black;
+
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function ladybugs (){
+			var bug = document.createElement("div")
+			document.body.appendChild(bug);
+			bug.classList.add('bug');
+
+			function move () {bug.style.left = Math.random()*1000+"px";}
+
+			setInterval(move, 500)
+
+
+		}
+
+		for(var i=0; i<100; i=1+1){
+			ladybugs()
+		}
+
+
+	</script>
+</body>
+</html>

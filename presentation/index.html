@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section><h2>Hello</section>
+				<section>My name is Emmy!</section>
+				<section data-background-image="https://hips.hearstapps.com/hmg-prod/images/cherry-blossom-or-sakura-in-japan-close-up-royalty-free-image-937809942-1546893872.jpg">
+					<h2 style="color:black;">These are my favorite flowers</h2>
+				</section>
+				<!-- <section data-background-image="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/810WLmet57L.jpg">
+					<h2 style="color:white;">And these are my favorite trees</h2>
+				</section> -->
+				<section>During my free time, I love to...</section>
+				<section data-auto-animate><h2>play with my dog!</h2></section>
+				<section data-auto-animate><h2 style="margin:400px; color:pink;">This is lily:</h2></section>
+
+				<section data-background-image= "lilly.png"></section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+
+	<style type="text/css">
+	#line{
+		height:1000px;
+		width:2px;
+		background-color:black;
+	}
+
+	#rock{
+		height:200px;
+		width:200px;
+		background-image: url(rock.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		position:absolute;
+		top:100px;
+	}	
+	#paper{
+		height:200px;
+		width:200px;
+		background-image: url(paper.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		position:absolute;
+		top:300px;
+	}
+	#scissors{
+		height:200px;
+		width:200px;
+		background-image: url(scissors.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		position:absolute;
+		top:500px;
+	}
+	#box{
+		height:100px;
+		width:20px;
+		background-color:darkblue;
+	}
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+	
+<center>
+	<div id="line"></div>
+</center>
+	<div id="rock"></div>
+	<div id="paper"></div>
+	<div id="scissors"></div>
+	<div id="box"></div>
+
+<script type="text/javascript">
+	
+	var counter =0;
+
+	var rock = document.getElementById("rock");
+
+	var box = document.getElementById("box");
+
+	rock.addEventListener("click", function() {
+		counter = counter + 1;
+			console.log(counter)
+
+			if (counter%2 == 1){
+				box.style.opacity
+			}
+
+			else if (counter%2 == 0)
+			{
+			box.style.opacity = "0";	
+			}
+			}
+		
+
+		
+
+</script>
+
+
+</body>
+</html>
