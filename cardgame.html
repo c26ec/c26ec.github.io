@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+
+	<style type="text/css">
+		
+		.card{
+			width: 380px;
+			height: 550px;
+			border: 1px solid black;
+			position: abolute;
+			left: 100px;
+			top: 100px;
+			display: inline-block;
+			background-size: contain;
+			background-repeat: no-repeat;
+
+		}
+
+		.score{
+			width: 100px;
+			height: 100px;
+			position: relative;
+			border: 1px solid black;
+			top: 0px;
+			left: 20%;
+			border: 1px solid black;
+			display: inline-block;
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+	<div class="card" id="player1"></div>
+
+	<div class="card" id="player2"></div>
+
+	<!-- <div id="player1"></div>
+
+	<div id="player2"></div> -->
+
+	<div class="score" id="player1scores">
+player1
+<br>
+	0
+</div>
+	<div class="score" id="player2scores">
+	player2
+<br>
+0</div>
+
+	<script type="text/javascript">
+
+//this is the part that...
+		
+		var suits = ["d", "h", "s", "c"]
+
+		var player1score = 0
+
+		var player2score = 0
+
+
+		
+		player1.addEventListener("click", function(){
+
+			var cardNumber = Math.round(Math.random()*13)
+
+		var suitsNumber = Math.round(Math.random()*3)
+
+
+			player1.style.backgroundImage = "url("+cardNumber+ suits[suitsNumber]+".png)";
+			console.log(player1.style.backgroundImage)
+		})
+
+		player2.addEventListener("click", function(){
+
+			var cardNumber = Math.round(Math.random()*13)
+
+		var suitsNumber = Math.round(Math.random()*3)
+
+
+			player2.style.backgroundImage = "url("+cardNumber+ suits[suitsNumber]+".png)";
+			console.log(player1.style.backgroundImage)
+		})
+
+
+player1scores.addEventListener("click", function(){
+
+	player1score = player1score +1;
+	player1scores.innerText = player1score;
+})
+
+player2scores.addEventListener("click", function(){
+	player2score = player2score +1;
+	player2scores.innerText = player2score;
+})
+
+
+
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- 1. make div
+2. have an array within the div (Queen of spades.png, jack of hearts.png)
+3. add event listener that when you click it the background image of the card appears -->
+
